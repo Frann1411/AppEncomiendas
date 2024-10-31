@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos de Entrega</title>
+    <link rel="icon" type="image/png" href="truck.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .footer {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            background-color: #45484d;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            height: 100%;
+            /* Hace que todas las tarjetas tengan la misma altura */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            /* Altura fija para las imágenes */
+            object-fit: cover;
+            /* Ajusta la imagen para que siempre se vea bien */
+        }
+
+        .card-body {
+            flex-grow: 1;
+        }
+
+        .card-text {
+            margin-bottom: auto;
+            /* Hace que el contenido de texto siempre se alinee bien */
+        }
+
+        .btn-primary {
+            margin-top: 30px;
+            /* Añade espacio antes del botón */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Buscador -->
+    <div class="container my-4">
+        <h1 class="text-center">Puntos de Entrega</h1>
+        <div class="row mb-4">
+            <div class="col-md-8 mx-auto">
+                <input type="text" id="searchBox" class="form-control" placeholder="Buscar lugar...">
+            </div>
+        </div>
+        <!-- Galería -->
+        <div class="row" id="deliveryPoints">
+            <!-- Aquí se cargarán los puntos de entrega -->
+        </div>
+
+        <!-- Paginación -->
+        <nav>
+            <ul class="pagination justify-content-center" id="pagination">
+                <!-- Aquí se generarán los links de paginación -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Desarrollado por Frann Avila</p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
